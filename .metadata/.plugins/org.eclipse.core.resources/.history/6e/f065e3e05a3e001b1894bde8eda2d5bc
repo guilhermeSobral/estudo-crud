@@ -1,0 +1,52 @@
+package com.crudcompleto.entities;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Usuario {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String email;
+	private String senha;
+	
+	@OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY)
+	private List<Pedido> pedidos = new ArrayList<>();
+	
+	public Usuario() {}
+
+	public Usuario(String email, String senha) {
+		this.email = email;
+		this.senha = senha;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public List<Pedido> getPedidos() {
+		return Collections.unmodifiableList(pedidos);
+	}
+
+	public void setPedidos(List<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}	
+}

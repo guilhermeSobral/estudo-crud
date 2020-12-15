@@ -1,0 +1,15 @@
+package com.crudcompleto.service;
+
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public interface ICrudService {		
+	
+	public abstract <T,R> R findOrSave(Function<T, R> function, T repository);
+	
+	public abstract <T> List<T> filter(Predicate<T> predicate, List<T> list);
+	
+	public abstract <T> void delete(Consumer<T> consumer, T repository);
+}

@@ -1,0 +1,21 @@
+package com.crudcompleto.service;
+
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
+public interface CrudService {	
+	
+	public default <T,U,R> R save(BiFunction<T, U, R> function, T repository, U object) {
+		return function.apply(t, u);
+	}
+	
+	public default <T,R> R search(Function<T, R> function, T repository) {
+		return function.apply(repository);
+	}
+	
+	public default <T> void delete(Consumer<T> consumer, T repository) {
+		consumer.accept(repository);
+	}
+
+}

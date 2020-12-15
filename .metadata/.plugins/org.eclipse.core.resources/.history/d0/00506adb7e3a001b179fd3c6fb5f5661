@@ -1,0 +1,10 @@
+package com.crudcompleto.service;
+
+import java.util.function.Function;
+
+public interface Teste {
+
+	public default <T,R> R findOrSave(Function<T, R> function, T repository) {
+		return function.apply(repository);
+	}
+}

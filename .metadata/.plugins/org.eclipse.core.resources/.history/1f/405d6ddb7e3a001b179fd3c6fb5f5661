@@ -1,0 +1,12 @@
+package com.crudcompleto.service;
+
+import java.util.function.Function;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface Teste {
+
+	public default <T extends JpaRepository<T, ID>,R> R findOrSave(Function<T, R> function, T repository) {
+		return function.apply(repository);
+	}
+}

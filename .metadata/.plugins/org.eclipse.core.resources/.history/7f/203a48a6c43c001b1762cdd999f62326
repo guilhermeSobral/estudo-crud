@@ -1,0 +1,7 @@
+spring.datasource.url=jdbc:mysql://database-1.cik8cbq5ucxx.us-east-2.rds.amazonaws.com:3306/crud
+spring.datasource.username=admin
+spring.datasource.password=aws123456
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect

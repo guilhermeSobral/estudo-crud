@@ -1,0 +1,5 @@
+package com.crudcompleto.service;
+
+public class UsuarioService extends GenericService<R, T, ID> {
+
+}

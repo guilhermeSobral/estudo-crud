@@ -1,0 +1,59 @@
+package com.crudcompleto.service;
+
+import java.util.function.Predicate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.crudcompleto.entities.Pedido;
+import com.crudcompleto.entities.Produto;
+import com.crudcompleto.entities.Usuario;
+import com.crudcompleto.entities.dto.NewPedido;
+import com.crudcompleto.repositories.PedidoRepository;
+
+@Service
+public class PedidoService extends GenericService<PedidoRepository, Pedido, Long> {
+	
+	@Autowired
+	private UsuarioService usuarioService;
+	
+	@Autowired
+	private ProdutoService produtoService;
+
+	@Autowired
+	public PedidoService(PedidoRepository repository) {
+		super(repository, Pedido.class);
+	}
+	
+	public void savePedido(NewPedido obj) {
+		var pedido = newPedido(obj);		
+		save(pedido);
+	}
+	
+	private Pedido newPedido(NewPedido obj) {
+		var usuario = usuarioService.searchById(obj.getIdUsuario());
+		var produto = produtoService.searchById(obj.getIdProduto());
+		var pedido = ifPedidoExists(usuario);
+		if(pedido == null) {
+			var newPedido = new Pedido(produto, usuario);
+			adicionaProdutosNoPedido(newPedido, produto, obj.getUnidades() - 1);
+			return newPedido;
+		}
+		adicionaProdutosNoPedido(pedido, produto, obj.getUnidades());
+		return pedido;
+	}	
+
+	private void adicionaProdutosNoPedido(Pedido newPedido, Produto produto, Long unidades) {
+		for (int i = 1; i <= unidades; i++) {
+			newPedido.setProduto(produto);
+		}		
+	}
+
+	private Pedido ifPedidoExists(Usuario usuario) {
+		Predicate<Pedido> predicate = pedido -> pedido.getUsuario().equals(usuario) && pedido.getAtivo();
+		var pedido = filter(predicate);
+		return (!pedido.isEmpty()) ? pedido.get(0) : null;
+		
+	}
+
+}

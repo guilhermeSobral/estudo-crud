@@ -1,0 +1,81 @@
+package com.crudcompleto.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.crudcompleto.controllers.exceptions.ObjetoNaoEncontradoException;
+import com.crudcompleto.entities.Produto;
+import com.crudcompleto.service.ProdutoService;
+
+@RestController
+@RequestMapping("/produtos")
+public class ProdutoController {
+	
+	@Autowired
+	private ProdutoService service;
+	
+	@PostMapping
+	@ResponseStatus(value = HttpStatus.CREATED)
+	public void createProduto(@RequestBody Produto newProduto) {
+		service.saveProduto(repository -> repository.save(newProduto));
+	}
+	
+	@GetMapping()
+	public ResponseEntity<List<Produto>> findAllProdutos() {
+		var list = service.search(repository -> repository.findAll());
+		return ResponseEntity.ok().body(list);
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<Produto> findById(@PathVariable Long id) {
+		var produto = service.search(repository -> repository.findById(id))
+				.orElseThrow(() -> new ObjetoNaoEncontradoException(String.format("Produto de id %d não encontrado", id)));
+		return ResponseEntity.ok().body(produto);
+	}
+	
+	@GetMapping("/search/nome/{str}")
+	public ResponseEntity<List<Produto>> findByName(@PathVariable String str) {
+		var list = service.filter(produto -> produto.getNome()
+				.toLowerCase()
+				.contains(str));
+		return ResponseEntity.ok().body(list);
+	}
+	
+	@GetMapping("/search/price/{operation}/{price}")
+	public ResponseEntity<List<Produto>> findByPrice(@PathVariable String operation, @PathVariable Double price) {
+		if(operation.equals("+")) {
+			var list = service.filter(produto -> produto.getPreco() >= price);
+			return ResponseEntity.ok().body(list);
+		}		
+		var list = service.filter(produto -> produto.getPreco() <= price);
+		return ResponseEntity.ok().body(list);			
+	}
+	
+	@PutMapping("/{id}")
+	public ResponseEntity<Void> updateProduto(@PathVariable Long id, @RequestBody Produto update) {
+		service.updateProduto((repository, obj) -> {
+			produto.setNome(obj.getNome());
+			produto.setPreco(obj.getPreco());
+			return repository.save(produto);
+		}, update);
+		return ResponseEntity.noContent().build();
+	}
+	
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Void> deleteProduto(@PathVariable Long id) {
+		service.deleteProduto(repository -> repository.deleteById(id));
+		return ResponseEntity.noContent().build();
+	}
+}

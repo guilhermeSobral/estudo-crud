@@ -1,0 +1,50 @@
+package com.crudcompleto.service;
+
+import java.util.function.Predicate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.crudcompleto.entities.Pedido;
+import com.crudcompleto.entities.Usuario;
+import com.crudcompleto.entities.dto.NewPedido;
+import com.crudcompleto.repositories.PedidoRepository;
+
+public class PedidoService extends GenericService<PedidoRepository, Pedido, Long> {
+	
+	@Autowired
+	private UsuarioService usuarioService;
+	
+	@Autowired
+	private ProdutoService produtoService;
+
+	@Autowired
+	public PedidoService(PedidoRepository repository) {
+		super(repository, Pedido.class);
+	}
+	
+	public void savePedido(NewPedido obj) {
+		var pedido = newPedido(obj);		
+		save(pedido);
+	}
+	
+	private Pedido newPedido(NewPedido obj) {
+		var usuario = usuarioService.searchById(obj.getIdUsuario());
+		var produto = produtoService.searchById(obj.getIdProduto());
+		if(ifPedidoExists(usuario)) {
+			// pegar o pedido
+			Predicate<Pedido> predicate -> pedido -> pedi
+			filter(predicate);
+			// adicionar os produtos
+		}	
+		var pedido = new Pedido(produto, usuario);
+		return pedido;
+	}
+	
+	private Pedido ifPedidoExists(Usuario usuario) {
+		Predicate<Pedido> predicate = pedido -> pedido.getUsuario().equals(usuario) && pedido.getAtivo();
+		var pedido = filter(predicate);
+		return (!pedido.isEmpty()) ? pedido.get(0) : null;
+		
+	}
+
+}

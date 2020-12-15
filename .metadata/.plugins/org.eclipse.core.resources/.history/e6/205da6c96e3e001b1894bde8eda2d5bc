@@ -1,0 +1,46 @@
+package com.crudcompleto.service;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.function.Predicate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.crudcompleto.entities.Produto;
+import com.crudcompleto.repositories.ProdutoRepository;
+
+@Service
+public class ProdutoService extends GenericService<ProdutoRepository, Produto, Long> {
+	
+	private ProdutoRepository repository;
+
+	@Autowired
+	public ProdutoService(ProdutoRepository repository) {		
+		super(repository, Produto.class);
+	}
+	
+	public List<Produto> filterByName(String name) {
+		Predicate<Produto> predicate = produto -> produto.getNome()
+				.toLowerCase()
+				.contains(name.toLowerCase());
+		return filter(predicate);
+	}
+	
+	public List<Produto> filterByPrice(String operation, BigDecimal price) {
+		Predicate<Produto> predicate;
+		if(operation.equals("+")) {
+			predicate = produto -> produto.getPreco().compareTo(price) >= 0;
+			return filter(predicate);
+		}
+		predicate = produto -> produto.getPreco().compareTo(price) <= 0;
+		return filter(predicate);
+	}
+	
+	public void updateProduto(Long id, Produto update) {
+		var produto = searchById(id);
+		produto.setNome(update.getNome());
+		produto.setPreco(update.getPreco());
+		save(produto);
+	}
+}

@@ -1,0 +1,11 @@
+package com.crudcompleto.service;
+
+import java.util.function.Consumer;
+
+public interface CrudService {
+	
+	public default void teste(String str) {
+		System.out.println(str);
+	}
+
+}

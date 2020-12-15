@@ -1,0 +1,23 @@
+package com.crudcompleto.service;
+
+import java.util.function.Consumer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.crudcompleto.repositories.ProdutoRepository;
+
+@Service
+public class ProdutoService implements CrudService {
+	
+	@Autowired
+	private ProdutoRepository repository;
+	
+	
+	public void deleteProduto(Long id) {
+		Consumer<ProdutoRepository> consumer = repository -> repository.deleteById(id);()
+		delete(consumer, repository);
+	}
+	
+	
+}

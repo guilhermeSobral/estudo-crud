@@ -1,0 +1,28 @@
+package com.crudcompleto.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public interface CrudService {		
+	
+	public default <T,R> R searchOrSave(Function<T, R> function, T repository) {
+		return function.apply(repository);
+	}
+	
+	public default <T> List<T> filter(Predicate<T> predicate, List<T> list) {
+		var filteredList = new ArrayList<T>();
+		for (T element : list) {
+			if(predicate.test(element))
+				filteredList.add(element);
+		}
+		return filteredList;
+	}
+	
+	public default <T> void delete(Consumer<T> consumer, T repository) {
+		consumer.accept(repository);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.crudcompleto.entities.dto;
+
+public class NewPedido {
+
+}

@@ -1,0 +1,11 @@
+package com.crudcompleto.service;
+
+import java.util.function.Function;
+
+public interface CrudService {
+	
+	public default void teste(Function<T, R>)  {
+		
+	}
+
+}

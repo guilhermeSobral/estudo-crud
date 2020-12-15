@@ -1,0 +1,12 @@
+package com.crudcompleto.service;
+
+import com.crudcompleto.entities.Pedido;
+import com.crudcompleto.repositories.PedidoRepository;
+
+public class PedidoService extends GenericService<PedidoRepository, Pedido, Long> {
+
+	public PedidoService(PedidoRepository repository) {
+		super(repository, Pedido.class);
+	}
+
+}

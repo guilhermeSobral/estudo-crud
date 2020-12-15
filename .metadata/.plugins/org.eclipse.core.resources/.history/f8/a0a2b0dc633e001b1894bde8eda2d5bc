@@ -1,0 +1,16 @@
+package com.crudcompleto.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.crudcompleto.entities.Produto;
+import com.crudcompleto.repositories.ProdutoRepository;
+
+public class TesteImpl extends Teste<ProdutoRepository, Produto, Long> {
+	
+	private ProdutoRepository repository;
+
+	@Autowired
+	public TesteImpl(ProdutoRepository repository) {		
+		super(repository, Produto.class);
+	}
+}

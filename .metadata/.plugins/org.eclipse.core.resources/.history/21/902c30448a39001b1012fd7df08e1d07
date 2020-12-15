@@ -1,0 +1,46 @@
+package com.crudcompleto.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.crudcompleto.entities.Produto;
+import com.crudcompleto.repositories.ProdutoRepository;
+
+@Service
+public class ProdutoService {
+	
+	@Autowired
+	private ProdutoRepository repository;
+	
+	public Produto saveProduto(Function<ProdutoRepository, Produto> function) {
+		return function.apply(repository);
+	}
+	
+	public <R> R search(Function<ProdutoRepository, R> function) {
+		return function.apply(repository);
+	}
+	
+	public List<Produto> filter(Predicate<Produto> predicate) {
+		var newList = new ArrayList<Produto>();
+		for (Produto produto : repository.findAll()) {
+			if(predicate.test(produto))
+				newList.add(produto);
+		}
+		return newList;
+	}
+	
+	public void updateProduto(BiFunction<ProdutoRepository, Produto, Produto> function, Produto update) {
+		function.apply(repository, update);
+	}	
+	
+	public void deleteProduto(Consumer<ProdutoRepository> consumer) {
+		consumer.accept(repository);
+	}
+}

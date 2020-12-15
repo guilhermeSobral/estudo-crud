@@ -1,0 +1,8 @@
+1607225017372	Delete element
+1607548262035	Rename method 'searchOrSave'
+1607553846879	Rename type 'CrudService'
+1607554280180	Delete element
+1607560209657	Delete element
+1607809422186	Rename resource 'dev-application.properties'
+1607809447385	Rename resource 'test-application.properties'
+1607809986594	Rename resource 'application-test.properties'

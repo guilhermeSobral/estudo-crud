@@ -1,0 +1,37 @@
+package com.crudcompleto.service;
+
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.crudcompleto.controllers.exceptions.ObjetoNaoEncontradoException;
+
+public abstract class Teste<R extends JpaRepository<T, ID>, T, ID> {
+	
+	private R repository;
+	private Class<T> entity;
+
+	public Teste(R repository, Class<T> entity) {
+		this.repository = repository;
+		this.entity = entity;
+	}
+	
+	protected T searchById(ID id) {	
+		Function<R, T> function = repository -> repository.findById(id)
+				.orElseThrow(() -> new ObjetoNaoEncontradoException(String.format("O %s de id: %d não foi encontrado", entity.getSimpleName(), id)));
+		return function.apply(repository);
+	}
+	
+	protected List<T> search() {
+		Function<R, List<T>> function = repository -> repository.findAll();
+		return function.apply(repository);
+	}
+	
+	protected void delete(ID id) {
+		Consumer<R> consumer = repository -> repository.deleteById(id);
+		consumer.accept(repository);
+	}
+
+}

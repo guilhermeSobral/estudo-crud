@@ -1,0 +1,9 @@
+package com.crudcompleto.service;
+
+import java.util.function.Consumer;
+
+public interface CrudService {
+	
+	public <T,ID> void delete(Consumer<T> consumer, ID id);
+
+}
