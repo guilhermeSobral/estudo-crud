@@ -2,13 +2,19 @@ package com.crudcompleto.entities;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -19,8 +25,18 @@ public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(unique = true)
 	private String email;
 	private String senha;
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(
+		name = "usuarios_roles",
+		joinColumns = @JoinColumn(name = "usuario_id"),
+		inverseJoinColumns = @JoinColumn(name = "role_id")
+	)
+	Set<Role> role = new HashSet<>();
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "usuario")
@@ -51,6 +67,14 @@ public class Usuario {
 
 	public void setPedidos(Pedido pedido) {
 		pedidos.add(pedido);
+	}
+
+	public Set<Role> getRole() {
+		return Collections.unmodifiableSet(role);
+	}
+	
+	public void setRole(Role role) {
+		this.role.add(role);
 	}
 
 	@Override

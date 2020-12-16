@@ -5996,3 +5996,808 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-12-15 12:14:20.367
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:26:43.312
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SfZdpCNb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:26:43.320
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.SfZdpCNb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:26:43.326
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:26:43.333
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SfZdpCNb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:34.404
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:34.410
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@29767156[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:34.415
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.523
+!MESSAGE Boot LS startup time from start to initialized: 2101ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.550
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HhHGovEzisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.556
+!MESSAGE subscribing to classpath changes: sts4.classpath.HhHGovEz isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.561
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.567
+!MESSAGE subsribers = {sts4.classpath.HhHGovEz=Send Classpath Notifications(423)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.572
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.577
+!MESSAGE project crud-completo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.582
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.588
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.592
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.598
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HhHGovEz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.603
+!MESSAGE classpath=95 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.612
+!MESSAGE buffering callback sts4.classpath.HhHGovEz crud-completo false 95
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.618
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:27:36.644
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.820
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.829
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.838
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.846
+!MESSAGE buffering callback sts4.classpath.HhHGovEz crud-completo false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.851
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:34.862
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.064
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.069
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.079
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.086
+!MESSAGE buffering callback sts4.classpath.HhHGovEz crud-completo false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.091
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 12:33:42.103
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.138
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.144
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.152
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.158
+!MESSAGE buffering callback sts4.classpath.HhHGovEz oauth false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.164
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:20.175
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.020
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.027
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.035
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.044
+!MESSAGE buffering callback sts4.classpath.HhHGovEz oauth false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.050
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:03:21.059
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-12-15 13:03:23.236
+!MESSAGE Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, O sistema não pode encontrar o arquivo especificado
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 13:03:49.169
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-openfeign:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 13:03:49.170
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 13:03:49.170
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.0-RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 13:03:50.058
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 13:03:50.060
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 13:03:50.060
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.0-RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 13:04:08.781
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-openfeign:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 13:04:08.781
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 13:04:08.781
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.0-RC1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.138
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.146
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.157
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.167
+!MESSAGE buffering callback sts4.classpath.HhHGovEz oauth false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.175
+!MESSAGE executing callback sts4.classpath.HhHGovEz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 13:04:10.187
+!MESSAGE executing callback sts4.classpath.HhHGovEz SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 14:55:13.379
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 15:23:07.376
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 15:37:56.143
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:40.068
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HhHGovEz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:40.127
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.HhHGovEz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:40.134
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:40.140
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HhHGovEz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:43.673
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:43.678
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@29767156[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:43.682
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.658
+!MESSAGE Boot LS startup time from start to initialized: 4956ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.685
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QqjSqNiCisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.691
+!MESSAGE subscribing to classpath changes: sts4.classpath.QqjSqNiC isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.697
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.702
+!MESSAGE subsribers = {sts4.classpath.QqjSqNiC=Send Classpath Notifications(1371)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.707
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.712
+!MESSAGE project oauth ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.718
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.723
+!MESSAGE project crud-completo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.728
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.734
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:48.739
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QqjSqNiC => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.011
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.029
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC oauth false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.041
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.053
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.270
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.289
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.298
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 15:44:49.333
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 15:47:13.174
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResoultion(LSPCodeActionMarkerResolution.java:170)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.hasResolutions(LSPCodeActionMarkerResolution.java:192)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolution(MarkerHelpRegistry.java:203)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolutions(MarkerHelpRegistry.java:172)
+	at org.eclipse.ui.views.markers.MarkerField.annotateImage(MarkerField.java:87)
+	at org.eclipse.ui.internal.views.markers.MarkerProblemSeverityAndMessageField.update(MarkerProblemSeverityAndMessageField.java:80)
+	at org.eclipse.ui.internal.views.markers.MarkerColumnLabelProvider.update(MarkerColumnLabelProvider.java:57)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:946)
+	at org.eclipse.ui.internal.views.markers.MarkersTreeViewer.doUpdateItem(MarkersTreeViewer.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:121)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1024)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:422)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2097)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:840)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:818)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:604)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpandToLevel(AbstractTreeViewer.java:1801)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1120)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.expandToLevel(AbstractTreeViewer.java:1092)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.reexpandCategories(ExtendedMarkersView.java:1173)
+	at org.eclipse.ui.internal.views.markers.UIUpdateJob.runInUIThread(UIUpdateJob.java:111)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 15:47:13.473
+!MESSAGE Marker id 644 not found.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Marker id 644 not found.
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:260)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.lambda$3(LSPCodeActionMarkerResolution.java:163)
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2020-12-15 15:47:13.473
+!MESSAGE Marker id 644 not found.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 21:28:43.216
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-oauth2:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-oauth2:jar:sources:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-oauth2:jar:sources:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 21:28:43.231
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-oauth2:jar:sources:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 21:28:43.231
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-oauth2:jar:sources:3.0.0-RC1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:43.358
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:43.365
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:43.377
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:43.392
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC oauth false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:43.399
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 21:28:44.225
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-security:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-security:jar:sources:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:302)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-security:jar:sources:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 21:28:44.225
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-security:jar:sources:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 21:28:44.225
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-security:jar:sources:3.0.0-RC1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:28:45.417
+!MESSAGE executing callback sts4.classpath.QqjSqNiC FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-12-15 21:28:45.424
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:01.910
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:01.938
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:01.956
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:01.968
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC oauth false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:01.978
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 21:29:02.004
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 21:29:03.957
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-oauth2:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-oauth2:jar:javadoc:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-oauth2:jar:javadoc:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 21:29:03.957
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-oauth2:jar:javadoc:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 21:29:03.957
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-oauth2:jar:javadoc:3.0.0-RC1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-12-15 21:29:04.934
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-security:3.0.0-RC1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-security:jar:javadoc:3.0.0-RC1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:801)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:769)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:746)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:328)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:314)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:267)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:231)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:159)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-security:jar:javadoc:3.0.0-RC1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-12-15 21:29:04.934
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-security:jar:javadoc:3.0.0-RC1
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-12-15 21:29:04.934
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-security:jar:javadoc:3.0.0-RC1
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 22:02:11.888
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:20.993
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:21.024
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:21.038
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:21.051
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:21.057
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:15:21.102
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.222
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.229
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.252
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.262
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.268
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:16:29.284
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.813
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.839
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.849
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.858
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.865
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:21:18.879
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.863
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.951
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.960
+!MESSAGE classpath=95 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.969
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 95
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.976
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:41:51.991
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.385
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.417
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.428
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.436
+!MESSAGE buffering callback sts4.classpath.QqjSqNiC crud-completo false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.442
+!MESSAGE executing callback sts4.classpath.QqjSqNiC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 22:45:17.458
+!MESSAGE executing callback sts4.classpath.QqjSqNiC SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-12-15 23:15:55.135
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:21:58.052
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QqjSqNiC
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:21:58.134
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QqjSqNiC
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:21:58.139
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:21:58.145
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QqjSqNiC => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:00.825
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:00.832
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@29767156[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:00.837
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.608
+!MESSAGE Boot LS startup time from start to initialized: 4764ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.625
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UACbtaHyisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.631
+!MESSAGE subscribing to classpath changes: sts4.classpath.UACbtaHy isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.635
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.641
+!MESSAGE subsribers = {sts4.classpath.UACbtaHy=Send Classpath Notifications(3844)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.646
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.651
+!MESSAGE project crud-completo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.656
+!MESSAGE Preparing classpath changed notification crud-completo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.661
+!MESSAGE project oauth ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.665
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.670
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.676
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UACbtaHy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.683
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.692
+!MESSAGE buffering callback sts4.classpath.UACbtaHy crud-completo false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.697
+!MESSAGE Preparing classpath changed notification oauth
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.702
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.710
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.718
+!MESSAGE buffering callback sts4.classpath.UACbtaHy oauth false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.722
+!MESSAGE executing callback sts4.classpath.UACbtaHy 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:24:05.752
+!MESSAGE executing callback sts4.classpath.UACbtaHy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:27:46.649
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UACbtaHy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:27:46.656
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.UACbtaHy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:27:46.662
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-15 23:27:46.667
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UACbtaHy => OK

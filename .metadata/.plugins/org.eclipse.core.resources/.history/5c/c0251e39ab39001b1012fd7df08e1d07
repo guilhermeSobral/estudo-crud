@@ -1,9 +1,0 @@
-package com.crudcompleto.service;
-
-public interface CrudService {
-	
-	public default void teste() {
-		
-	}
-
-}

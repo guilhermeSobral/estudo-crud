@@ -1,7 +1,0 @@
-package com.crudcompleto.service;
-
-public interface CrudService {
-	
-	public <T,ID> void delete(Consumer<T> consumer, ID id);
-
-}
